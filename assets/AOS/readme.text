@@ -1,7 +1,0 @@
-INITIALIZE AOS
-------------------------
-Demo - https://michalsnik.github.io/aos/
----------------------
-<script>
-  AOS.init();
-</script>
