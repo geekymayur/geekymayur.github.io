@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube subscribe button link maker</title>
+    <!-- css -->
+    <link rel="stylesheet" href="/css/projects/yt-sub-btn-link.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css" type="text/css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 offset-md-1">
+                <div class="main mt-5">
+                    <input type="text" class="input" name="raw-link" id="getRawLink"
+                        placeholder="Paste Your Channel Link">
+                    <a class="btn btn-lg btn-primary text-white" id="generateLink">Generate Link</a>
+                    <div class="mt-5">
+                        <textarea name="showLink" id="showLink" cols="90" rows="2"
+                            placeholder="Your Generated Link will be displayed Here. Click on Copy Link to Copy generated link"
+                            disabled></textarea>
+                    </div>
+                    <a class="btn btn-warning text-white" id="copyLink">Copy Link</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Notes -->
+
+    </div>
+
+    <!-- scripts -->
+    <script src="../../js/jquery-2.1.3.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="/js/projects/yt-sub-btn-link.js"></script>
+</body>
+
+</html>
