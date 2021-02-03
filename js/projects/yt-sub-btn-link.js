@@ -2,6 +2,7 @@
 const getButton = document.getElementById("generateLink");
 const getRawLink = document.getElementById("getRawLink");
 const shownewlink = document.getElementById("showLink");
+let lastlink = document.getElementById("lastlink");
 const postfix = "?subcription=1";
 
 var generateLink = () => {
@@ -16,9 +17,12 @@ var generateLink = () => {
         console.log("Link lenght should be Larger than 55 Characters but your link is Just " + oldlink.length + ".");
         // alert(oldlink);
     } else {
+        getRawLink.classList.add("is-Valid");
         let newlink = oldlink + postfix;
         shownewlink.value = newlink;
-        console.log(oldlink.length)
+        console.log(oldlink.length);
+        localStorage.setItem("lastitem", newlink);
+        lastlink.innerHTML = localStorage.getItem("lastitem");
     }
 
 }
@@ -27,7 +31,12 @@ var copylink = () => {
     if (shownewlink.value == "") {
         alert("Please First Generate link and then click on Copy.")
     } else {
-        alert("Link Copied! Thanks For using.")
+        /* Select the text field */
+        shownewlink.select();
+        shownewlink.setSelectionRange(0, 99999); /* For mobile devices */
+        /* Copy the text inside the text field */
+        document.execCommand("copy");
+        alert("Link Copied! Thanks For using.");
     }
 }
 copybtn.addEventListener('click', copylink);

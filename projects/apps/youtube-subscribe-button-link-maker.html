@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Youtube subscribe button link maker</title>
+    <title>Youtube subscribe button link maker By Mayur</title>
     <!-- css -->
     <link rel="stylesheet" href="/css/projects/yt-sub-btn-link.css">
     <link rel="stylesheet" href="../../css/bootstrap.min.css" type="text/css">
@@ -14,21 +14,81 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-md-10 offset-md-1">
-                <div class="main mt-5">
-                    <input type="text" class="input" name="raw-link" id="getRawLink"
-                        placeholder="Paste Your Channel Link">
-                    <a class="btn btn-lg btn-primary text-white" id="generateLink">Generate Link</a>
-                    <div class="mt-5">
-                        <textarea name="showLink" id="showLink" cols="90" rows="2"
-                            placeholder="Your Generated Link will be displayed Here. Click on Copy Link to Copy generated link"
-                            disabled></textarea>
-                    </div>
-                    <a class="btn btn-warning text-white" id="copyLink">Copy Link</a>
+            <div class="col-md-12">
+                <div style="width: 50%; margin: auto;">
+                    <figure id="yt-img">
+                        <img src="/img/items/youtube-logo-9.png" alt="">
+                        <b>LinkZen By GeekyMayur</b>
+                    </figure>
                 </div>
+
+            </div>
+            <div class="col-md-8 offset-md-2">
+                <div class="main mt-5">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Paste here your YouTube Channel Link</label>
+                        <input type="text" class="form-control newinput" id="getRawLink" aria-describedby="emailHelp"
+                            placeholder="">
+                        <div class="valid-feedback">
+                            Link Generated
+                        </div>
+                        <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                            else.</small> -->
+                        <a class="btn btn-primary text-white float-right mt-3" id="generateLink">Get Link</a>
+
+                    </div>
+
+                    <div class="mt-5">
+                        <div class="form-group">
+                            <label for="showLink">Genreated Link</label>
+                            <textarea disabled class="form-control" id="showLink" rows="3"
+                                placeholder="Your Generated Link will be displayed Here. Click on Copy Link to Copy generated link"></textarea>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+
+                    </div>
+                    <button class="btn btn-warning text-white float-right" id="copyLink" title="Click to Copy Link">Copy
+                        Link</button>
+                </div>
+
+                <!-- last link created -->
+
+                <p id="lastlink"></p>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-8 offset-md-2 mt-5">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Previous Created link</th>
+                            <th scope="col">Action</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
-
         <!-- Notes -->
 
     </div>
