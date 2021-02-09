@@ -10,6 +10,11 @@
     <!-- custom css -->
     <link rel="stylesheet" href="../../css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="../../css/projects/weather.css">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/fontawesome.min.js"></script>
 </head>
 
 <body>
@@ -19,34 +24,50 @@
             <div class="col-md-6 offset-md-3 ">
                 <!-- search -->
                 <div class="box-1">
-                    <p id="greet"></p>
+                    <!-- <p id="greet"></p> -->
                     <div class="row">
                         <div class="col-md-8">
-                            <input type="text" placeholder="Enter City Name" autocomplete="off" value="" id="cityname">
+                            <input type="text" placeholder="Enter City Name" autocomplete="on" value="" id="cityname">
                         </div>
                         <div class="col-md-4">
                             <a id="check-button" class="search-btn btn btn-info btn-lg btn-block text-white">Check</a>
                         </div>
                     </div>
                 </div>
-                <div class="box-2">
+                <div class="box-2" id="display-box-1">
                     <!-- display -->
                     <div class="row">
                         <div class="col-md-6">
                             <div class="inner-box1">
-                                <h3 class="text-center">Begusarai, IN</h3>
+                                <h3 id="cityName" class="text-center">Loading...</h3>
+                                <h5 class="text-center" id="showDiscription">Loading...</h5>
+
                                 <img id="weatherImage" src="http://openweathermap.org/img/wn/10d@4x.png">
-                                <h3 class="text-center display-1">25°C</h3>
-                                <p class="">Clear sky</p>
-                                <p>Scatter Clouds</p>
-                                <p>Min: 12°C ~ Max : 30°C</p>
+                                <h3 id="showTemp" class="text-center display-1">Loading...</h3>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="inner-box1">
-                                <p>Feels Like</p>
-                                <p>Humidity</p>
-                                <p>Wind Speed</p>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p>Sky</p>
+                                        <p>Feels Like</p>
+                                        <p>Min temp</p>
+                                        <p>Max temp</p>
+                                        <p>Humidity </p>
+                                        <p>Wind Speed</p>
+
+                                    </div>
+                                    <div class="col-6" id="weatherDisc">
+                                        <p id="sky" class=""></p>
+                                        <p id="feelsLike" class=""></p>
+                                        <p id="minTemp"></p>
+                                        <p id="maxTemp"></p>
+                                        <p id="humidity"></p>
+                                        <p id="windspeed"></p>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </div>
