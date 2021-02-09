@@ -22,7 +22,12 @@ var generateLink = () => {
         shownewlink.value = newlink;
         console.log(oldlink.length);
         localStorage.setItem("lastitem", newlink);
-        lastlink.innerHTML = localStorage.getItem("lastitem");
+        let prevlink = localStorage.getItem("lastitem");
+        document.getElementById("addLastLink").innerHTML = `  <tr>
+                            <th scope="row">${prevlink}</th>`;
+
+                        //     <td><button class="btn btn-sm btn-danger" onclick="removeLastLink()">Delete</button=></td>
+                        // </tr>`;
     }
 
 }
@@ -43,3 +48,15 @@ copybtn.addEventListener('click', copylink);
 
 
 getButton.addEventListener('click', generateLink);
+
+
+
+
+function removeLastLink() {
+    localStorage.removeItem("lastitem");
+    $("addLastLink").hide();
+    // innerHTML = `  <tr>
+    //                     <th scope="row">${prevlink}</th>
+    //                     <td><a href="#" class="btn btn-sm btn-danger" onclick="removeLastLink()">Delete</a></td>
+    //                 </tr>`;
+};
