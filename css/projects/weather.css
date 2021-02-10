@@ -14,7 +14,8 @@ background-attachment: fixed;
 /* background-color: rgb(158, 158, 158); */
 margin-bottom: 50px;
 background-image: url("/img/background/background-backdrop-droplets-raindrop.jpg");
-background-size: cover;
+/* background-size:; */
+background-repeat: no-repeat;
 
 }
 
