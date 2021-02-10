@@ -6,16 +6,12 @@ function profile() {
     // } else {
     //     greet.innerHTML = `Welcome ${name}`;
     // }
-    $("#display-box-1").hide()
+    // hide or show display box 
+    // $("#display-box-1").hide();
 }
 
-
-
-
 // Calling profile function for greeting user
-
 profile();
-
 
 let checkbutton = document.getElementById("check-button");
 let getcityname = document.getElementById("cityname");
@@ -23,11 +19,11 @@ let weatherImage = document.getElementById("weatherImage");
 let showTemp = document.getElementById("showTemp");
 let showCityName = document.getElementById("cityName");
 let showDiscription = document.getElementById("showDiscription");
-
-// get geolocation weather
-
-
-
+const apikey = "a02caaedb7f5180cd72e9ece23c352fa";
+const forecastAPIKEY = "71c02a27bd54ffc432aa062fdc8fc4dc";
+var showForecast = document.getElementById("showForecast");
+// get forecast weather location
+// https://api.openweathermap.org/data/2.5/forecast?q=London,uk&cnt=4&APPID=71c02a27bd54ffc432aa062fdc8fc4dc
 
 // this function will run after clicking on check button 
 let getWeather = async (event) => {
@@ -42,12 +38,12 @@ let getWeather = async (event) => {
             let url = `https://api.openweathermap.org/data/2.5/weather?q=${cityname}&units=metric&appid=a02caaedb7f5180cd72e9ece23c352fa`;
             let response = await fetch(url);
             let data = await response.json();
-            console.log(url);
-            console.log(data);
+            // console.log(url);
+            // console.log(data);
             $("#display-box-1").show().slideDown();
 
             let celcius = data.main.temp;
-            console.log(typeof celcius)
+            // console.log(typeof celcius)
             if (celcius[1] == 0) {
                 showTemp.innerHTML = `0°C`;
             } else {
@@ -75,8 +71,17 @@ let getWeather = async (event) => {
         } catch (error) {
             $("#display-box-1").hide();
 
-            alert("Please Check Your City Name and Try Again or check your Internet Connection.");
-            console.log(error);
+            alert("Please Check Your City Name and Try Again.");
+            // console.log(error);
+        }
+        try {
+            let apiurl = `https://api.openweathermap.org/data/2.5/forecast?q=${cityname}&units=metric&cnt=4&APPID=71c02a27bd54ffc432aa062fdc8fc4dc`;
+            let response1 = await fetch(apiurl);
+            let data1 = await response1.json();
+            // console.log(data1.list.length);
+
+        } catch (error) {
+            // console.log("Error generated in forecast");
         }
     }
 };

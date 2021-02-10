@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/all.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/fontawesome.min.js"></script>
+    <!-- slick file using cdn -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 </head>
 
 <body>
@@ -38,12 +40,15 @@
                     <!-- display -->
                     <div class="row">
                         <div class="col-md-6">
-                            <div class="inner-box1">
-                                <h3 id="cityName" class="text-center">Loading...</h3>
-                                <h5 class="text-center" id="showDiscription">Loading...</h5>
-
-                                <img id="weatherImage" src="http://openweathermap.org/img/wn/10d@4x.png">
-                                <h3 id="showTemp" class="text-center display-1">Loading...</h3>
+                            <div class="row inner-box1">
+                                <div class="col-9 col-md-10 p-0">
+                                    <h3 id="cityName" class="text-left">Loading...</h3>
+                                    <h5 class="text-left" id="showDiscription">Loading...</h5>
+                                    <h3 id="showTemp" class="text-left display-1"></h3>
+                                </div>
+                                <div class="col-3 col-md-2 p-0">
+                                    <img id="weatherImage" src="http://openweathermap.org/img/wn/10d@2x.png">
+                                </div>
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -70,28 +75,79 @@
 
                             </div>
                         </div>
+
+
                     </div>
-                    <!-- <div class="row p-0">
-                        <div class="col-md-3 offset-md-1 forecast-box"></div>
-                        <div class="col-md-3 offset-md-1 forecast-box"></div>
-                        <div class="col-md-3 offset-md-1 forecast-box"></div>
-                        <div class="col-md-3 offset-md-1 forecast-box"></div>
-                        <div class="col-md-3 offset-md-1 forecast-box"></div>
-                        <div class="col-md-3 offset-md-1 forecast-box"></div>
-                        <div class="col-md-3 offset-md-1 forecast-box"></div>
-                    </div> -->
+
                 </div>
+                <!-- slik js  -->
+                <div class="box-3">
+                    <div class="row">
+                        <div class="col-md-12 multiple-items" id="showForecast">
+                            <div class="forecast-box">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="forecast-inner-box">
+                    <p class="text-center">12/12/2020</p>
+                    <p class="text-center">cloudy</p>
+                    <img id="forecast-weatherImage" src="http://openweathermap.org/img/wn/10d@2x.png">
+                    <h1 class="text-center">22°C</h1>
+                
+                </div> -->
             </div>
         </div>
 
         <br>
         <p class="text-center text-white">Created with <img src="/img/background/heart.png" height="25px"> by Mayur</p>
+        <pre class="text-center text-light">Version 1.0.5</pre>
     </div>
 
     <!-- scripts -->
     <script src="../../js/jquery-2.1.3.min.js"></script>
     <script src="../../js/bootstrap.min.js"></script>
     <script src="../../js/projects/weather-js.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript">
+        $('.multiple-items').slick({
+            arrows: false,
+            infinite: false,
+            slidesToShow: 4,
+            slidesToScroll: 2,
+            appendDots: true,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+
+        });
+    </script>
+    <!-- <script src="//code.jivosite.com/widget/0CzKEBQXOS" async></script> -->
 </body>
 
 </html>
