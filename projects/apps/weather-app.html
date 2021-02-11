@@ -12,9 +12,9 @@
     <link rel="stylesheet" href="../../css/projects/weather.css">
 
     <!-- font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/all.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/fontawesome.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/fontawesome.min.js"></script> -->
     <!-- slick file using cdn -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 </head>
@@ -84,19 +84,73 @@
                 <div class="box-3">
                     <div class="row">
                         <div class="col-md-12 multiple-items" id="showForecast">
+                            <!-- day 1 -->
                             <div class="forecast-box">
-
+                                <div class="forecast-inner-box">
+                                    <p class="text-center" id="day1Forecastdate"></p>
+                                    <p class="text-center forecast-sky" id="day1Forecastsky"></p>
+                                    <img class="forecast-weatherImage" id="day1Forecasticon" src="">
+                                    <h1 class="text-center forecast-temp" id="day1Forecasttemp"></h1>
+                                </div>
+                            </div>
+                            <!-- day 2 -->
+                            <div class="forecast-box">
+                                <div class="forecast-inner-box">
+                                    <p class="text-center" id="day2Forecastdate"></p>
+                                    <p class="text-center forecast-sky" id="day2Forecastsky"></p>
+                                    <img class="forecast-weatherImage" id="day2Forecasticon" src="">
+                                    <h1 class="text-center forecast-temp" id="day2Forecasttemp"></h1>
+                                </div>
+                            </div>
+                            <!-- day 3 -->
+                            <div class="forecast-box">
+                                <div class="forecast-inner-box">
+                                    <p class="text-center" id="day3forecastdate"></p>
+                                    <p class="text-center forecast-sky" id="day3forecastsky"></p>
+                                    <img class="forecast-weatherImage" id="day3forecasticon" src="">
+                                    <h1 class="text-center forecast-temp" id="day3forecasttemp"></h1>
+                                </div>
+                            </div>
+                            <!-- day 4 -->
+                            <div class="forecast-box">
+                                <div class="forecast-inner-box">
+                                    <p class="text-center" id="day4forecastdate"></p>
+                                    <p class="text-center forecast-sky" id="day4forecastsky"></p>
+                                    <img class="forecast-weatherImage" id="day4forecasticon" src="">
+                                    <h1 class="text-center forecast-temp" id="day4forecasttemp"></h1>
+                                </div>
+                            </div>
+                            <!-- day 5 -->
+                            <div class="forecast-box">
+                                <div class="forecast-inner-box">
+                                    <p class="text-center" id="day5forecastdate"></p>
+                                    <p class="text-center forecast-sky" id="day5forecastsky"></p>
+                                    <img class="forecast-weatherImage" id="day5forecasticon" src="">
+                                    <h1 class="text-center forecast-temp" id="day5forecasttemp"></h1>
+                                </div>
+                            </div>
+                            <!-- day 6 -->
+                            <div class="forecast-box">
+                                <div class="forecast-inner-box">
+                                    <p class="text-center" id="day6forecastdate"></p>
+                                    <p class="text-center forecast-sky" id="day6forecastsky"></p>
+                                    <img class="forecast-weatherImage" id="day6forecasticon" src="">
+                                    <h1 class="text-center forecast-temp" id="day6forecasttemp"></h1>
+                                </div>
+                            </div>
+                            <!-- day 7 -->
+                            <div class="forecast-box">
+                                <div class="forecast-inner-box">
+                                    <p class="text-center" id="day7forecastdate"></p>
+                                    <p class="text-center forecast-sky" id="day7forecastsky"></p>
+                                    <img class="forecast-weatherImage" id="day7forecasticon" src="">
+                                    <h1 class="text-center forecast-temp" id="day7forecasttemp"></h1>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- <div class="forecast-inner-box">
-                    <p class="text-center">12/12/2020</p>
-                    <p class="text-center">cloudy</p>
-                    <img id="forecast-weatherImage" src="http://openweathermap.org/img/wn/10d@2x.png">
-                    <h1 class="text-center">22°C</h1>
-                
-                </div> -->
+
             </div>
         </div>
 
@@ -115,7 +169,7 @@
             arrows: false,
             infinite: false,
             slidesToShow: 4,
-            slidesToScroll: 2,
+            slidesToScroll: 4,
             appendDots: true,
             responsive: [
                 {
