@@ -12,22 +12,24 @@
     <link rel="stylesheet" href="../../css/projects/weather.css">
 
     <!-- font awesome -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/all.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/fontawesome.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/fontawesome.min.js"></script>
     <!-- slick file using cdn -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 </head>
 
 <body>
+  
     <div class="container-fluid">
-
+      
         <div class="row">
             <div class="col-md-6 offset-md-3 ">
                 <!-- search -->
                 <div class="box-1">
                     <!-- <p id="greet"></p> -->
                     <div class="row">
+
                         <div class="col-md-8">
                             <input type="text" placeholder="Enter City Name" autocomplete="on" value="" id="cityname">
                         </div>
@@ -42,9 +44,9 @@
                         <div class="col-md-6">
                             <div class="row inner-box1">
                                 <div class="col-9 col-md-10 p-0">
-                                    <h3 id="cityName" class="text-left">Loading...</h3>
-                                    <h5 class="text-left" id="showDiscription">Loading...</h5>
-                                    <h3 id="showTemp" class="text-left display-1"></h3>
+                                    <h3 id="cityName" class="text-left ml-3">Loading...</h3>
+                                    <h5 class="text-left ml-3" id="showDiscription">Loading...</h5>
+                                    <h3 id="showTemp" class="text-left display-1 ml-2"></h3>
                                 </div>
                                 <div class="col-3 col-md-2 p-0">
                                     <img id="weatherImage" src="http://openweathermap.org/img/wn/10d@2x.png">
@@ -78,129 +80,27 @@
 
 
                     </div>
-
+                
                 </div>
-                <!-- slik js  -->
-                <div class="box-3">
-                    <div class="row">
-                        <div class="col-md-12 multiple-items" id="showForecast">
-                            <!-- day 1 -->
-                            <div class="forecast-box">
-                                <div class="forecast-inner-box">
-                                    <p class="text-center" id="day1Forecastdate"></p>
-                                    <p class="text-center forecast-sky" id="day1Forecastsky"></p>
-                                    <img class="forecast-weatherImage" id="day1Forecasticon" src="">
-                                    <h1 class="text-center forecast-temp" id="day1Forecasttemp"></h1>
-                                </div>
-                            </div>
-                            <!-- day 2 -->
-                            <div class="forecast-box">
-                                <div class="forecast-inner-box">
-                                    <p class="text-center" id="day2Forecastdate"></p>
-                                    <p class="text-center forecast-sky" id="day2Forecastsky"></p>
-                                    <img class="forecast-weatherImage" id="day2Forecasticon" src="">
-                                    <h1 class="text-center forecast-temp" id="day2Forecasttemp"></h1>
-                                </div>
-                            </div>
-                            <!-- day 3 -->
-                            <div class="forecast-box">
-                                <div class="forecast-inner-box">
-                                    <p class="text-center" id="day3forecastdate"></p>
-                                    <p class="text-center forecast-sky" id="day3forecastsky"></p>
-                                    <img class="forecast-weatherImage" id="day3forecasticon" src="">
-                                    <h1 class="text-center forecast-temp" id="day3forecasttemp"></h1>
-                                </div>
-                            </div>
-                            <!-- day 4 -->
-                            <div class="forecast-box">
-                                <div class="forecast-inner-box">
-                                    <p class="text-center" id="day4forecastdate"></p>
-                                    <p class="text-center forecast-sky" id="day4forecastsky"></p>
-                                    <img class="forecast-weatherImage" id="day4forecasticon" src="">
-                                    <h1 class="text-center forecast-temp" id="day4forecasttemp"></h1>
-                                </div>
-                            </div>
-                            <!-- day 5 -->
-                            <div class="forecast-box">
-                                <div class="forecast-inner-box">
-                                    <p class="text-center" id="day5forecastdate"></p>
-                                    <p class="text-center forecast-sky" id="day5forecastsky"></p>
-                                    <img class="forecast-weatherImage" id="day5forecasticon" src="">
-                                    <h1 class="text-center forecast-temp" id="day5forecasttemp"></h1>
-                                </div>
-                            </div>
-                            <!-- day 6 -->
-                            <div class="forecast-box">
-                                <div class="forecast-inner-box">
-                                    <p class="text-center" id="day6forecastdate"></p>
-                                    <p class="text-center forecast-sky" id="day6forecastsky"></p>
-                                    <img class="forecast-weatherImage" id="day6forecasticon" src="">
-                                    <h1 class="text-center forecast-temp" id="day6forecasttemp"></h1>
-                                </div>
-                            </div>
-                            <!-- day 7 -->
-                            <div class="forecast-box">
-                                <div class="forecast-inner-box">
-                                    <p class="text-center" id="day7forecastdate"></p>
-                                    <p class="text-center forecast-sky" id="day7forecastsky"></p>
-                                    <img class="forecast-weatherImage" id="day7forecasticon" src="">
-                                    <h1 class="text-center forecast-temp" id="day7forecasttemp"></h1>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+               
             </div>
         </div>
 
         <br>
-        <p class="text-center text-white">Created with <img src="/img/background/heart.png" height="25px"> by Mayur</p>
+        <p class="text-center text-white">Created with <i class="fa fa-heart text-warning"></i> by Mayur</p>
         <pre class="text-center text-light">Version 1.0.5</pre>
     </div>
 
+    <!-- refresh -->
+    <!-- <div class="refresh">
+    <i class="fa fa-sync"></i>
+    </div> -->
     <!-- scripts -->
     <script src="../../js/jquery-2.1.3.min.js"></script>
     <script src="../../js/bootstrap.min.js"></script>
     <script src="../../js/projects/weather-js.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script type="text/javascript">
-        $('.multiple-items').slick({
-            arrows: false,
-            infinite: false,
-            slidesToShow: 4,
-            slidesToScroll: 4,
-            appendDots: true,
-            responsive: [
-                {
-                    breakpoint: 1024,
-                    settings: {
-                        slidesToShow: 3,
-                        slidesToScroll: 3,
-                        dots: true
-                    }
-                },
-                {
-                    breakpoint: 600,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 2
-                    }
-                },
-                {
-                    breakpoint: 480,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 1
-                    }
-                }
-                // You can unslick at a given breakpoint now by adding:
-                // settings: "unslick"
-                // instead of a settings object
-            ]
-
-        });
-    </script>
+    <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
+  
     <!-- <script src="//code.jivosite.com/widget/0CzKEBQXOS" async></script> -->
 </body>
 
