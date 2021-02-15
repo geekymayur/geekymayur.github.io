@@ -13,7 +13,7 @@ padding-bottom:70px;
 background: #FF512F;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #DD2476, #FF512F);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #DD2476, #FF512F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-/* background-size:contain; */
+background-size:contain;
 /* background-image: url("https://cdn.wallpapersafari.com/83/47/crXmjY.jpg"); */
 /* background-image: url("https://thewallpaper.co/wp-content/uploads/2020/08/background-images-love-amazing-nice-weather-sky-romance-high-resolution-widescreen-1920x1080-1.jpg"); */
 /* filter: blur(8px); */
