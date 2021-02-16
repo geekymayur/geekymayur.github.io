@@ -1,18 +1,11 @@
-function profile() {
-    // let greet = document.getElementById("greet");
-    // let name = prompt("Hey, I am Mayur and You ?");
-    // if (name == "" || name == null) {
-    //     greet.innerHTML = `Welcome User`;
-    // } else {
-    //     greet.innerHTML = `Welcome ${name}`;
-    // }
+function autorun() {
     // hide or show display box 
     $("#display-box-1").hide();
   
 }
 
 // Calling profile function for greeting user
-profile();
+autorun();
 
 let checkbutton = document.getElementById("check-button");
 let getcityname = document.getElementById("cityname");
