@@ -1,7 +1,7 @@
 function autorun() {
     // hide or show display box 
     $("#display-box-1").hide();
-  
+
 }
 
 // Calling profile function for greeting user
@@ -61,8 +61,7 @@ let getWeather = async (event) => {
             $("#humidity").text(data.main.humidity + " %");
             $("#windspeed").text(data.wind.speed + " meter/sec");
         } catch (error) {
-            // $("#display-box-1").hide();
-            // $("#showForecast").hide();
+            $("#display-box-1").hide();
             alert("Please Check Your City Name and Try Again.");
             // console.log(error);
         }
