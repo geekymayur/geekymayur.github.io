@@ -40,6 +40,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/fontawesome.min.js"></script>
     <!-- slick file using cdn -->
     <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
@@ -54,28 +55,33 @@
                         </div>
                         <div class="col-md-4">
                             <a id="check-button"
-                                class="search-btn btn btn-info btn-lg btn-block text-white w-100">CHECK</a>
+                                class="search-btn btn btn-info btn-lg btn-block text-white w-100 animate__animated animate__headShake animate__infinite">CHECK</a>
                         </div>
                     </div>
                 </div>
-                <div class="box-notification" id="notiBox">
+                <div class="box-notification animate__animated animate__swing animate__repeat-1" id="notiBox">
                     <p class=" text-warning mb-0">Error occured.</p>
                     <h5 id="notification" class="text-danger mb-0"> </h5>
                 </div>
-                <div class="box-2" id="display-box-1">
+                <div class="box-2 animate__animated animate__rotateInDownLeft animate__repeat-1" id="display-box-1">
                     <!-- display -->
                     <div class="row">
                         <div class="col-md-6">
-                            <div class="row inner-box1">
+                            <div class="row inner-box1 ">
                                 <div class="col-9 col-md-10 p-0">
-                                    <h3 id="cityName" class="text-left ml-3">Loading...</h3>
-                                    <h5 class="text-left ml-3" id="showDiscription">Loading...</h5>
+                                    <h3 id="cityName"
+                                        class="text-left ml-3 animate__animated animate__fadeInTopRight animate__repeat-1">
+                                        Loading...</h3>
+                                    <h5 class="text-left ml-3 animate__animated animate__fadeInTopRight animate__repeat-1"
+                                        id="showDiscription">Loading...</h5>
                                 </div>
                                 <div class="col-3 col-md-2 p-0">
                                     <img id="weatherImage" src="http://openweathermap.org/img/wn/10d@2x.png">
                                 </div>
                                 <div class="col-12 col-md-12 p-0">
-                                    <h3 id="showTemp" class="text-center display-1"></h3>
+                                    <h3 id="showTemp"
+                                        class="text-center display-1 animate__animated animate__bounceInDown animate__repeat-1">
+                                    </h3>
 
                                 </div>
                             </div>
@@ -92,7 +98,8 @@
                                         <p>Wind Speed</p>
 
                                     </div>
-                                    <div class="col-6" id="weatherDisc">
+                                    <div class="col-6 animate__animated animate__fadeInTopRight animate__repeat-1"
+                                        id="weatherDisc">
                                         <p id="sky" class=""></p>
                                         <p id="feelsLike" class=""></p>
                                         <p id="minTemp"></p>
@@ -111,10 +118,12 @@
         <br>
 
         <div class="dev-info">
-            <p class="text-center text-white">Created with <i class="fa fa-heart" style="color: red;"></i> by GeekyMayur
+            <p class="text-center text-white animate__animated animate__rotateInUpRight animate__repeat-1">Created with
+                <i class="fa fa-heart" style="color: red;"></i> by GeekyMayur
             </p>
             <figure>
-                <img src="/img/mayur-sharma.jpg" id="profile-image-mayur" alt="">
+                <img src="/img/mayur-sharma.jpg" id="profile-image-mayur" alt=""
+                    class="animate__animated animate__pulse animate__infinite">
             </figure>
             <!-- <pre class="text-center text-light">Version 1.0.5</pre> -->
         </div>
