@@ -1,7 +1,11 @@
+var notification = document.getElementById("notification");
+var notificationbox = document.getElementById("notiBox");
 function autorun() {
     // hide or show display box 
     $("#display-box-1").hide();
-
+    $(".dev-info").hide();
+    $(".box-1").css("margin-top", "250px");
+    $(notificationbox).hide();
 }
 
 // Calling profile function for greeting user
@@ -22,7 +26,20 @@ let getWeather = async (event) => {
     event.preventDefault();
     let cityname = getcityname.value;
     if (cityname == "") {
-        alert("Enter City name");
+        // alert("Enter City name");
+        // $(".box-1").css("margin-top", "250px");
+
+        $(notificationbox).show();
+        $("#display-box-1").hide();
+        $(".dev-info").hide();
+        notification.innerHTML = `Please Enter City Name.`;
+
+        let hidebox = function () {
+            var xyz = $(notificationbox).hide();
+            setInterval(xyz, 3000);
+        };
+        clearInterval(hidebox);
+
     }
     else {
 
@@ -32,19 +49,20 @@ let getWeather = async (event) => {
             let data = await response.json();
             // console.log(url);
             // console.log(data);
-            $("#display-box-1").show().slideDown();
+            $(notificationbox).hide();
+
+            $(".box-1").css("margin-top", "10px").animate()
+            $("#display-box-1").show();
+            $(".dev-info").show();
 
             let celcius = data.main.temp;
-            // console.log(typeof celcius)
             if (celcius[1] == 0) {
                 showTemp.innerHTML = `0°C`;
             } else {
                 showTemp.innerHTML = `${celcius.toFixed(0)}°C`;
-
             }
             if (data.sys.country == undefined) {
                 showCityName.innerHTML = `${data.name}`;
-
             } else {
                 showCityName.innerHTML = `${data.name}, ${data.sys.country}`;
             }
@@ -61,9 +79,13 @@ let getWeather = async (event) => {
             $("#humidity").text(data.main.humidity + " %");
             $("#windspeed").text(data.wind.speed + " meter/sec");
         } catch (error) {
+            // $(".box-1").css("margin-top", "250px");
             $("#display-box-1").hide();
-            alert("Please Check Your City Name and Try Again.");
-            // console.log(error);
+            $(".dev-info").hide();
+            $(notificationbox).show();
+
+            // alert("Please Check Your City Name and Try Again.");
+            notification.innerHTML = `Please Check you City name and try again.`;
         }
 
     }

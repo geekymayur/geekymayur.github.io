@@ -10,7 +10,7 @@
 
 body{
 background-attachment: fixed;
-margin-bottom:100px;
+/* margin-bottom:100px; */
 /* background-image: url("/img/background/background-backdrop-droplets-raindrop.jpg"); */
 background: #7b4397;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #dc2430, #7b4397);  /* Chrome 10-25, Safari 5.1-6 */
@@ -35,7 +35,7 @@ height: 100vh;
 margin: auto;
 min-height: 70px;
 background-color: rgba(0, 0, 0, 0.521);
-margin-top: 50px;
+margin-top: 10px;
 border-radius: 1rem;
 /* background-color: #85FFBD; */
 /* background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%); */
@@ -46,6 +46,19 @@ box-shadow: 0px 5px 10px black;
 /* background-image: url("/img/background/top-bg.png"); */
 background-size: cover;
 box-shadow: 0 8px 6px -6px black;
+}
+.box-notification{
+   margin: auto;
+min-height: 10px;
+background-color: rgba(0, 0, 0, 0.521);
+margin-top: 10px;
+border-radius: 1rem;
+border: 2px solid #ffaf03;
+padding:20px;
+padding-top: 10px;
+box-shadow: 0px 5px 10px black;
+background-size: cover;
+box-shadow: 0 8px 6px -6px black; 
 }
 .box-2{
     color: white !important;
@@ -98,7 +111,7 @@ input::placeholder{
     margin-top: -45px;
     margin-left:-50px;
     /* box-shadow: 0px 0px 10px black; */
-    filter:drop-shadow(0px 0px 5px rgb(255, 255, 255));
+    filter:drop-shadow(5px 5px 2px rgb(24, 24, 24));
 
 }
 .forecast-weatherImage{
@@ -201,7 +214,7 @@ transition: .5s;
     left:calc(50% - 50px);
     width: 100px;
     border-radius: 100%;
-    border:3px solid white;
+    border:3px solid rgb(29, 29, 29);
     filter:drop-shadow(0px 0px 15px rgb(0, 0, 0));
     
 }
