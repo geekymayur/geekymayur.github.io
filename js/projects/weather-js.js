@@ -28,18 +28,10 @@ let getWeather = async (event) => {
     if (cityname == "") {
         // alert("Enter City name");
         // $(".box-1").css("margin-top", "250px");
-
         $(notificationbox).show();
         $("#display-box-1").hide();
         $(".dev-info").hide();
         notification.innerHTML = `Please Enter City Name.`;
-
-        let hidebox = function () {
-            var xyz = $(notificationbox).hide();
-            setInterval(xyz, 3000);
-        };
-        clearInterval(hidebox);
-
     }
     else {
 
@@ -79,7 +71,7 @@ let getWeather = async (event) => {
             $("#humidity").text(data.main.humidity + " %");
             $("#windspeed").text(data.wind.speed + " meter/sec");
         } catch (error) {
-            // $(".box-1").css("margin-top", "250px");
+            $(".box-1").css("margin-top", "250px");
             $("#display-box-1").hide();
             $(".dev-info").hide();
             $(notificationbox).show();
