@@ -87,7 +87,7 @@ var getGitUser = async () => {
             var row = `  <tr class="animate__animated animate__repeat-1 animate__fadeInUp">
                           <th scope="row"> ${repoData[i].name}</th>
                          <td>${repoData[i].owner.login}</td>
-                         <td><a target="__blank" class="btn btn-sm btn-secondary" href="${repoData[i].html_url}"><i class="fa fa-github-alt"></i> GitHub</a></td>
+                         <td><a target="_blank" class="btn btn-sm btn-secondary" href="${repoData[i].html_url}"><i class="fa fa-github-alt"></i> GitHub</a></td>
                          </tr> `;
             showRepoList.innerHTML += row;
 
@@ -104,7 +104,7 @@ var getGitUser = async () => {
         }
         for (var j = 0; j <= followerData.length; j++) {
 
-            showFollowers.innerHTML += `<div class="col-4 col-md-3">
+            showFollowers.innerHTML += `<div class="col-6 col-md-3">
                                 <div class="animate__animated animate__repeat-1 animate__fadeInUp">
                                     <div class="card" >
                                         <div class="card-body">
