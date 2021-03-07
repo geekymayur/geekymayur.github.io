@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    /* background-color: blueviolet; */
+    background-image: url("assets/paper.jpg");
+    /* background-repeat: no-repeat; */
+height: 100%;
+background-position:top;
+}
+.main{
+    width: 80% ;
+    min-height:250px;
+    margin:auto;
+}
+.box-a{
+    background-color: rgba(0, 0, 0, 0.11);
+    width: 80%;
+min-height: 250px;
+    margin: auto;
+    margin-top:50px;
+    border-radius: 10px;
+    padding:30px;
+    color: red;
+    box-shadow: 5px 5px 15px black;
+}
+.box-b{
+    width: 80%;
+    min-height: 50px;
+    margin: auto;
+    margin-top:10px;
+}
+#getQuote{
+    background-color:rgba(255, 81, 0, 0.295);
+    width:100px;
+    /* height: 100px; */
+    padding: 20px;
+border-radius:10px;
+border: none;
+float: right;
+color:rgb(0, 0, 0);
+font-size:20px;
+cursor: pointer;
+}
+#getQuote:focus{
+    border: none;
+    outline: none;
+}
+#getQuote:hover{
+color: red;
+border: 2px solid red;
+}
+.app-title{
+    color: rgb(255, 255, 255);
+
+}
+.text-center{
+    text-align: center;
+}
+#content{
+text-align: center;
+font-family: 'Libre Baskerville', serif;
+}
+#author{
+    text-align: center;
+margin-top: 40px;
+/* float: right; */
+font-family: 'Libre Baskerville', serif;
+font-style: italic;
+color: black;
+}
+.right-quote{
+    float: right;
+    transform: rotate(180deg);
+}
+.share-box{
+    position: absolute;
+    top:30%;
+    left: 0px;
+    padding: 5px;
+}
+.social-box{
+    /* background-color: rgb(255, 0, 0); */
+    height: 50px;
+    width: 50px;
+    /* border-bottom: 2px solid rgb(255, 255, 255); */
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+}
+.social-box:hover{
+    cursor: pointer;
+    transform: scale(1.4);
+    transition: .5s;
+}
+.social-box img{
+    height: 100%;
+}
+
+/* @media(max-width:750px){
+    .box-a{
+        width: 100%;
+    }
+    #tags,#getQuote{
+        width: 100%;
+    }
+} */

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitFinder</title>
+    <link rel="shortcut icon" href="assets/github-icon.png" type="image/png">
+    <link rel="stylesheet" href="assets/style.css">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="assets/bootstrap.min.css">
+    <!-- jquery -->
+
+</head>
+
+<body class="bg-dark">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#"><i class="fa fa-github-alt"></i> GitFinder </a>
+            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02"
+                aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button> -->
+
+            <!-- <div class="collapse navbar-collapse" id="navbarColor02">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                            aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Separated link</a>
+                        </div>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                    <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div> -->
+        </nav>
+        <h1 class="text-center text-warning"><i class="fa fa-github-alt"></i></h1>
+        <h1 class="text-center text-warning">
+            < GitFinder />
+        </h1>
+        <div class="row mt-3">
+            <div class="col-md-6 offset-md-3" style="margin-top:50px;">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" style="border-radius:1px;" placeholder="Search your Profile"
+                        autocomplete="name" id="getGitUserId" value="">
+                    <button class="btn btn-primary br-0" style="border-radius:0px" type="button" id="button-1">
+                        Search <i class="fa fa-search"></i></button>
+                </div>
+            </div>
+        </div>
+        <hr class="bg-dark">
+        <div class="row  p-2" id="allDataContainer">
+            <div class="col-md-3 text-light mt-4">
+                <div id="left-profile">
+
+                    <div id="userAvtar">
+                        <figure>
+                            <img src="/assets/github-profile.png" alt="" id="profileImage">
+                        </figure>
+                    </div>
+                    <h3 class="text-center mt-3" id="name1"> MAYUR SHARMA</h3>
+                    <h4 class="text-center" id="username1">geekymayur</h4>
+
+                    <div class="row mt-4">
+                        <div class="col-12">
+                            <table class="table text-light">
+                                <tbody>
+                                    <tr>
+                                        <th scope="row"><i class="fa fa-user"></i> </th>
+                                        <td id="userinfoName">Mayur sharma</td>
+
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><i class="fa fa-building"></i></th>
+                                        <td id="userinfoCompany">Google</td>
+
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><i class="fa fa-location-arrow"></i></th>
+                                        <td id="userinfoLocation">Delhi</td>
+
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><i class="fa fa-globe"></i></th>
+                                        <td id="userinfoBlog"><a href="" target="__blank" id="blog_link">www.mayur.co.in
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><i class="fa fa-code"></i></th>
+                                        <td id="userinfoPublicRepo">45</td>
+
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-9 mt-4">
+                <div>
+                    <ul class="nav nav-tabs">
+                        <!-- <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#profile"><i class="fa fa-user"></i>
+                                Profile</a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#Repo">
+                                <i class="fa fa-code"></i>
+                                Repositories <span class="badge bg-light" id="repo_length">00</span></a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#follower"><i class="fa fa-users"></i> Followers
+                                <span class="badge bg-light text-dark" id="follower_number">00</span></a>
+                        </li>
+                    </ul>
+                    <div id="myTabContent" class="tab-content">
+
+                        <div class="tab-pane fade" id="profile">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <table class="table table-dark table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">#</th>
+                                                <th scope="col">First</th>
+                                                <th scope="col">Last</th>
+                                                <th scope="col">Handle</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>Mark</td>
+                                                <td>Otto</td>
+                                                <td>@mdo</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td>Jacob</td>
+                                                <td>Thornton</td>
+                                                <td>@fat</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">3</th>
+                                                <td colspan="2">Larry the Bird</td>
+                                                <td>@twitter</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="Repo">
+                            <!-- <h4 class="mt-4 text-light">All Public Repositories</h4> -->
+                            <div class="row mt-2">
+                                <div class="col-md-12">
+                                    <table class="table table-dark table-striped">
+                                        <thead class="bg-secondary">
+                                            <tr>
+                                                <th scope="col">Repositories Name</th>
+                                                <th scope="col">Owner</th>
+                                                <th scope="col"></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="showRepoList">
+                                            <!-- <tr>
+                                            <th scope="row">1</th>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Jacob</td>
+                                            <td>Thornton</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td>@twitter</td>
+                                            <td>@twitter</td>
+
+                                        </tr> -->
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="follower">
+
+                            <div class="row" id="showFollowers">
+                                <!-- <div class="col-6 col-md-4">
+                                <div>
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <figure class="follower-img">
+                                                <img src="/assets/1039-200x200.jpg" alt="">
+                                            </figure>
+                                        </div>
+                                        <div class="card-footer">
+                                            <h3 class="text-center">Sonu Sharma</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- scripts -->
+    <script src="assets/jquery-3.5.1.slim.min.js"></script>
+    <script src="assets/popper.min.js"></script>
+    <script src="assets/bootstrap.min.js"></script>
+    <script src="assets/fontawesome.js"></script>
+
+    <script src="assets/scripts.js"></script>
+</body>
+
+</html>

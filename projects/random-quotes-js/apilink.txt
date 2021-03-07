@@ -1,0 +1,10 @@
+https://github.com/lukePeavey/quotable
+
+
+
+API link :-   https://api.quotable.io/random?tags=technology,famous-quotes
+
+https://www.linkedin.com/shareArticle?mini=true&url=http://developer.linkedin.com&title=MayurSharma&summary=Mynewpc&source=LinkedIn
+
+
+whatsapp = https://wa.me/?text=Hello%20from%20Forward%20Action
