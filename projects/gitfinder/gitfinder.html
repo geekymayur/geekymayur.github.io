@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="assets/style.css">
     <!-- bootstrap css -->
     <link rel="stylesheet" href="assets/bootstrap.min.css">
-    <!-- jquery -->
-
+    <!-- aos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body class="bg-dark">
@@ -57,12 +57,14 @@
                 </form>
             </div> -->
         </nav>
-        <h1 class="text-center text-warning"><i class="fa fa-github-alt"></i></h1>
-        <h1 class="text-center text-warning">
+        <h1 class="text-center text-warning animate__animated animate__infinite animate__slower animate__swing"><i
+                class="fa fa-github-alt"></i></h1>
+        <h1 class="text-center text-warning animate__animated animate__infinite animate__swing animate__slower">
             < GitFinder />
         </h1>
         <div class="row mt-3">
-            <div class="col-md-6 offset-md-3" style="margin-top:50px;">
+            <div class="col-md-6 offset-md-3 animate__animated animate__bounce animate__delay-3s animate__repeat-1"
+                style="margin-top:50px;">
                 <div class="input-group mb-3">
                     <input type="text" class="form-control" style="border-radius:1px;" placeholder="Search your Profile"
                         autocomplete="name" id="getGitUserId" value="">
@@ -73,7 +75,7 @@
         </div>
         <hr class="bg-dark">
         <div class="row  p-2" id="allDataContainer">
-            <div class="col-md-3 text-light mt-4">
+            <div class="col-md-3 text-light mt-4 animate__animated animate__repeat-1 animate__fadeInLeft">
                 <div id="left-profile">
 
                     <div id="userAvtar">
@@ -130,7 +132,7 @@
                                 Profile</a>
                         </li> -->
                         <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#Repo">
+                            <a class="nav-link active" data-toggle="tab" href="#Repo">
                                 <i class="fa fa-code"></i>
                                 Repositories <span class="badge bg-light" id="repo_length">00</span></a>
                         </li>
