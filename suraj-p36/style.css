@@ -1,0 +1,97 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.mobile_screen {
+    /* border: 2px solid red; */
+    min-height: 100vh;
+    /* width: 400px; */
+    /* margin-left: 50px; */
+    /* margin-top: 100px; */
+    background-color: antiquewhite;
+    padding: 10px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.404), rgba(255, 255, 255, 0.308)), url('./assets/bg.png');
+    background-position: 20% 10%;
+    background-size: cover;
+}
+
+.top_box {
+    text-align: center;
+}
+
+.calender_wrapper {
+    padding: 0px 5px;
+    background-color: rgba(255, 255, 255, 0.466);
+    min-height: 200px;
+    border-radius: 10px;
+}
+
+.calenderData_wrapper {
+    margin-top: 10px;
+    padding: 5px 5px;
+    background-color: #FFD191;
+    min-height: 50px;
+    border-radius: 10px;
+    border: 2px solid #FFB100;
+}
+
+.cal_innerBox {
+    min-height: 50px;
+    width: 100%;
+    display: flex;
+    margin: 2px;
+    flex-direction: column;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.dayName {
+    font-weight: 600;
+    background: none;
+    font-size: 15px;
+}
+
+.tile_bg-1 {
+    background-color: white;
+    border: 2px solid white;
+    color: #FF0045;
+}
+
+.tile_bg-2 {
+    background-color: #FFD191;
+    border: 2px solid #FFD191;
+}
+
+.tile_bg-blank {
+    background-color: #ffffff4b;
+    border: 2px solid #ffffff00;
+}
+
+.tile-bg-today {
+    background-color: #FFD191;
+    border: 2px solid #FFB100;
+}
+
+.dateNum {
+    font-size: 25px;
+    font-weight: 700;
+}
+.detail .top_line{
+    line-height: 30px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+.hr_line{
+    border: 1px solid black;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.text-red{
+    color: #FF0045;
+}
